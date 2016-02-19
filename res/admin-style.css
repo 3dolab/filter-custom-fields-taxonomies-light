@@ -1,0 +1,319 @@
+.sf-group1, .sf-group2{
+	border: 2px dotted #cacaca;
+	padding: 2% 4%;
+	list-style: none;
+	background: #ffffff;
+	float: left;
+	width: 40%;
+	margin: 0;
+}
+
+.sf-group1{
+	margin-right: 1%;
+}
+
+
+.sf-group1 li, .sf-group2 li{
+	font-weight: bold;
+}
+li.sf-drag{
+	font-weight: normal;
+	border: 1px solid #cacaca;
+	background: #ffffff;
+	padding: 5px 10px;
+}
+
+.sf-clear{
+	clear: both;
+}
+
+.field{
+	border: 2px dotted #cacaca;
+	padding: 2% 4%;
+	list-style: none;
+	background: #ffffff;
+	float: left;
+	width: 40%;
+	margin: 0;
+}
+
+.field.filter > div{
+	cursor:pointer;
+}
+
+.field.filter > div:hover{
+	border: 1px solid #ca0000;
+}
+
+.ui-state-highlight{
+	border: 2px dotted #ffff00;
+	background: rgba( 255, 255, 0, .3 );
+}
+
+#sf-dlg-shadow{
+	background: rgba( 0,0,0,.3 );
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#sf-dlg{
+	position: absolute;
+	background: #ffffff;
+	box-shadow: 0 0 2px #FFFFFF;
+	padding: 10px 20px;
+	z-index: 101;
+}
+
+#sf-dlg #options li{
+	position: relative;
+	height: 25px;
+	border: 1px solid #cacaca;
+	background: #ffffff;
+	padding: 5px 10px;
+}
+
+#sf-dlg fieldset{
+	border: 1px solid #cacaca;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px 10px;
+}
+
+.sf-option-delete{
+	cursor: pointer;
+    font-size: 1.5rem;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.sf-2columns{
+	float: left; 
+	width: 46%; 
+	margin: 0; 
+	padding: 2%;
+}
+
+.sf-4columns{
+	float: left; 
+	width: 150px; 
+	margin: 0; 
+	padding: 2%;
+}
+
+.sf-clear{
+	clear: both;
+}
+
+.sf-4columns img{
+	width: 100%;
+	height: auto;
+}
+
+textarea.sf{
+	width: 100%;
+	height: 200px;
+}
+
+.sf-wrap .field{
+	position: relative;
+}
+
+.sf-wrap .field p{
+	font-size: 20px;
+	color: #cacaca;
+	text-align: center;
+}
+
+.sf-wrap .field div{
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+	border: 1px solid rgba(0, 0, 0, .3);
+    float: left;
+    margin: 0 0 10px 1%;
+    padding: 1%;
+    width: 48%;
+	background: #ffffff;
+	text-align: center;
+	cursor: move;
+}
+
+.sf-wrap .field div>span{
+	display: block;
+}
+
+.sf-form label{
+	width: 150px;
+	display: inline-block;
+}
+
+.sf-form input,.sf-form select{
+	width: 150px;
+}
+
+.sf-form input[type="checkbox"],.sf-form input[type="radio"]{
+	width: auto;
+}
+
+.sf-form section{
+	padding: 10px 20px;
+	background: #ffffff;
+	max-width: 320px;
+	border: 1px solid #f0f0f0;
+}
+
+.sf-form section:nth-of-type(2n){
+	background: #f0f0f0;
+}
+
+.sf-form section small{
+	width: 150px;
+	display: block;
+	margin-left: 150px;
+}
+
+.sf-form hr{
+	height: 1px;
+	border: none;
+	border-top: 1px solid #cacaca;
+}
+
+
+.sf-form fieldset{
+	border: 1px solid #CACACA;
+    max-width: 360px;
+    padding: 10px 20px;
+	float: left;
+	margin-right: 20px;
+}
+
+.sf-form fieldset legend{
+	font-style: italic;
+}
+
+.sf-form fieldset.big{
+	max-width: 700px;
+}
+
+.sf-wrap .field .ui-sortable-placeholder{
+    border: 2px dotted rgba( 255, 255, 0, .5 );
+	height: 65px;
+	visibility: visible !important;
+}
+
+.sf-tabs{
+	position: relative;
+}
+
+.sf-tabs .ui-tabs-nav > li{
+	float: left;
+	margin-right: 3px;
+	margin: 0;
+	margin-bottom: -1px;
+}
+.sf-tabs .ui-tabs-nav > li > a{
+	display: block;
+	padding: 5px 10px;
+	color: #0074a2;
+	text-align: center;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	text-decoration: none;
+}
+
+.sf-tabs .ui-tabs-nav{
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+}
+
+.sf-tabs .ui-tabs-nav:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.sf-tabs .ui-tabs-nav > li.ui-tabs-active > a{
+	color: #333;
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+
+.sf-tabs > div{
+	z-index: -1;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 0 3px 3px;
+	display: block;
+	overflow: auto;
+	padding: 0.5em 0.9em;
+}
+
+.sf-accordion > h3{
+	border: 1px solid #cacaca;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #222;
+	background: #cacaca;
+	font-weight: normal;
+	text-shadow: 0 0 1px #fff;
+	font-size: 14px;
+	margin: 0;
+    padding: 10px;
+	color: #666;
+	cursor: pointer;
+}
+
+.sf-accordion > h3:first-child{
+	border-top: 1px solid #cacaca;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.sf-accordion > h3.last, .sf-accordion > div.last{
+	border-bottom: 1px solid #cacaca;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.sf-accordion > h3.ui-state-active {
+	border-bottom: 0;
+	color: #222;
+}
+
+.sf-accordion > div{
+	border: 1px solid #cacaca;
+	border-bottom: 1px solid #222;
+	padding: 10px;
+	border-top: 0;
+}
+
+img.sf-logo{
+	float: right;
+	margin: -10px 20px 0 0;
+}
+
+.sf-half{
+	margin-right: 1%;
+	padding: 0;
+	width: 49%;
+	float: left;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+img.sf-half{
+	max-width: 504px;
+}
+
+hr.sf{
+	clear: both;
+}

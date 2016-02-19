@@ -1,0 +1,726 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: searchform-1.5\n"
+"POT-Creation-Date: 2014-04-06 10:52+0200\n"
+"PO-Revision-Date: 2014-04-06 10:56+0200\n"
+"Last-Translator: David Remer <webmaster@websupporter.net>\n"
+"Language-Team: Websupporter <webmaster@websupporter.net>\n"
+"Language: DE_de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
+"X-Poedit-Basepath: c:\\xampp\\htdocs\\searchform\\wp-content\\plugins\\profi-"
+"search-filter\n"
+"X-Poedit-SearchPath-0: c:\\xampp\\htdocs\\searchform\\wp-content\\plugins"
+"\\profi-search-filter\n"
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/ajax.php:386
+#, php-format
+msgid ""
+"<span class=\"sf-foundcount\">%d results</span> out of <span class=\"sf-"
+"totalcount\">%d posts</span>"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:20
+msgid "Data Source"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:21
+msgid "Value"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:22
+msgid "Fieldname"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:23
+msgid "Save"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:24
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:78
+msgid "Cancel"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:25
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:381
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:382
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:181
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:182
+msgid "Fulltext Search"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:26
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:14
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:21
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:29
+msgid "Delete"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:27
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:385
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:386
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:185
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:186
+msgid "Selectbox"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:28
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:397
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:398
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:197
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:198
+msgid "Radiobox"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:29
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:390
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:190
+msgid "Inputfield"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:30
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:393
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:394
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:193
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:194
+msgid "Checkbox"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:31
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:401
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:402
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:201
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:202
+msgid "Range"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:32
+msgid "Start Range"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:33
+msgid "End Range"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:34
+msgid "Unit"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:35
+msgid "Show unit in front"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:36
+msgid "Operator"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:37
+msgid "Equal"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:38
+msgid "Like"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:39
+msgid "Bigger Than"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:40
+msgid "Smaller Than"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:41
+msgid "Equal or Bigger Than"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:42
+msgid "Equal or Smaller Than"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:43
+msgid "Options"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:44
+msgid "Automatic"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:45
+msgid "Individual"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:46
+msgid "Enter Option"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:47
+msgid "Enter Option Value"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:48
+msgid "Enter Option Key"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:49
+msgid "Add Option"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:50
+msgid "Please enter an Option Key"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:51
+msgid "Please enter an Option Value"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:52
+msgid "Remove Option"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:53
+msgid "Search Content"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:54
+msgid "The Title"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:55
+msgid "The Content"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:56
+msgid "The Excerpt"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:57
+msgid "Order By"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:58
+msgid "Map"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:59
+msgid "Latitude"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:60
+msgid "Longitude"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:61
+msgid "API Key"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:62
+msgid ""
+"Please select the Postmeta(s), in which the Latitude and Longitude are saved."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:63
+msgid "Center at Latitude"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:64
+msgid "Center at Longitude"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:65
+msgid "Zoom"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:66
+msgid "Choose between 1 and 18"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:67
+msgid "Map style"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:68
+msgid "Roadmap"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:69
+msgid "Satellite"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:70
+msgid "Hybrid"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:71
+msgid "Terrain"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:72
+msgid "Postmeta Options"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:73
+msgid "Map Options"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:74
+msgid "Show field when"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:75
+msgid "Show always"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:76
+msgid "Do you want to delete this form?"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:77
+msgid "Yes, delete form"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:79
+msgid "Update Option"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:86
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:11
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:5
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:8
+msgid "Search Filter"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:87
+msgid "New Filter"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/admin.php:88
+msgid "Edit Filter"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:13
+#, php-format
+msgid "Edit \"%s\""
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:32
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:28
+msgid "General Settings"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:34
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:30
+msgid "ID"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:38
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:244
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:273
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:12
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:19
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:34
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:333
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:362
+msgid "Name"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:42
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:38
+msgid "Post Type"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:56
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:52
+msgid "Highlight"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:58
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:54
+msgid "Highlight the matching phrases in the search results"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:61
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:127
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:280
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:419
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:57
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:103
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:219
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:369
+msgid "Next Step"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:66
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:61
+msgid "Taxonomies & Postmetas"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:67
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:62
+msgid ""
+"Please drag the Taxonomies and Postmetas, which you want to use in your "
+"search form from the left field to the right one."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:72
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:302
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:67
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:129
+msgid "Taxonomies"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:85
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:76
+msgid "Postmeta"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:130
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:222
+msgid "Layout"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:149
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:241
+msgid "Search Result Columns"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:155
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:247
+msgid "1 Column"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:163
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:255
+msgid "2 Columns"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:171
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:263
+msgid "3 Columns"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:179
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:271
+msgid "4 Columns"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:184
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:276
+msgid "Border & Background"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:185
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:277
+msgid "Border Color"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:186
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:278
+msgid "Background Color"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:187
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:279
+msgid "Highlight Color"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:190
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:282
+msgid "Single Result Element"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:198
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:290
+msgid "The directory "
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:206
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:298
+msgid "Choose a template"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:233
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:322
+msgid "Adjust template for Result Elemet"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:235
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:324
+msgid "Adjust template for No Result Elemet"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:239
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:328
+msgid "Template Tags"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:240
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:329
+msgid ""
+"You can enrich your template with Taxonomies, Postmeta-Values and much more. "
+"Here, you see the list of\n"
+"\t\t\tTemplate Tags you can use:"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:244
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:273
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:333
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:362
+msgid "Displays"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:247
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:336
+msgid "Displays the title of the post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:248
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:337
+msgid "Displays the content of the post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:249
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:338
+msgid "Displays the excerpt of the post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:250
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:339
+msgid "Displays the authors name"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:251
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:340
+msgid "Displays the number of comments on this post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:252
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:341
+msgid "Displays the link to the post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:253
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:342
+msgid "Displays the thumbnail of the post"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:258
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:347
+#, php-format
+msgid "Displays the used terms of the taxonomy \"%s\""
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:266
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:355
+#, php-format
+msgid "Displays the value of the Postmeta \"%s\""
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:298
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:125
+msgid "Form Elements"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:299
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:126
+msgid ""
+"Move the form elements, which you want to have in your form, from the right "
+"to the left pane. You can edit the elements attributes by clicking on it in "
+"the pane \"Chosen Form Elements\". In this dialog, you can set the necessary "
+"attributes."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:306
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:133
+msgid "Postmetas"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:317
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:144
+msgid "ascending"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:318
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:145
+msgid "descending"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:320
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:147
+msgid "Date ascending"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:321
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:148
+msgid "Date descending"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:347
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:174
+msgid "Chosen Form Elements"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:379
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:179
+msgid "All Form Elements"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:389
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:189
+msgid "Inputbox"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:405
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:406
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:205
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:206
+msgid "Google Map"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:409
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:410
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:209
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:210
+msgid "Order by"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:413
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:414
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:213
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:214
+msgid "Hidden Field"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:422
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:372
+msgid "Saved"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:425
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:375
+msgid "Yeeeeha!"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:427
+msgid ""
+"Your new detail search is now saved. You can insert this form by using the "
+"following shortcode:"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:432
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:382
+msgid "What's next?"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:433
+msgid ""
+"You have updated your search from. If you have already used this shortcode, "
+"the displayed form is updated aswell."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:434
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:388
+#, php-format
+msgid ""
+"If you are not sure, what Shortcodes are, have a \n"
+"\t\t\t\tlook into the <a href=\"%s\" target=\"_blank\">WordPress "
+"Documentation</a>."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:436
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:390
+msgid ""
+"Once, you have done this and published the new\n"
+"\t\t\t\tPage, your visitors can access this page and\n"
+"\t\t\t\tsearch your WordPress Database very detailed."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/edit.php:439
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:393
+#, php-format
+msgid ""
+"Thanks a lot for using <a href=\"%s\" target=\"_blank\">Profi Search Form</a>"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:7
+msgid "Create new search filter"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:13
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:20
+msgid "Shortcode"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/index.php:35
+msgid "No Search Filter yet."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:9
+msgid "New search filter"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:377
+msgid ""
+"Your detail search is now updated. You can insert this form by using the "
+"following shortcode:"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/admin/new.php:383
+#, php-format
+msgid ""
+"You have created your search from. This form \n"
+"\t\t\t\tneeds to be inserted into a Page. We recommend \n"
+"\t\t\t\tto <a target=\"_blank\" href=\"%s\" target=\"_blank\">create a new "
+"Page</a> and insert this shortcode \n"
+"\t\t\t\t[search-form id=\"%s\"] \n"
+"\t\t\t\tinto the Editor."
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:14
+msgid "Include a Search Form into your Sidebar"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:16
+msgid "Profi Search Form Widget"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:229
+msgid "Search"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:241
+#, php-format
+msgid ""
+"Before you are able to create a Searchform Widget, <a href=\"%s\">you have "
+"to create a page, where the results can be shown</a>"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:243
+#, php-format
+msgid ""
+"Before you are able to create a Searchform Widget, <a href=\"%s\">you have "
+"to create a Searchform here</a>"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:247
+msgid "Title"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:252
+msgid "Button Title"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:257
+msgid "Select Searchform"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:266
+msgid "Search Result Page"
+msgstr ""
+
+#: c:\xampp\htdocs\searchform\wp-content\plugins\profi-search-filter/includes/widget.php:275
+msgid "Ajax Autoload"
+msgstr ""

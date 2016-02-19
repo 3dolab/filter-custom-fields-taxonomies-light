@@ -1,0 +1,226 @@
+.sf-widget-element input, .sf-widget-element select, .sf-widget-element, .sf-button{
+	width: 100%;
+	margin-top: 0;
+}
+
+ .sf-widget-element{
+	margin-bottom: 5px;
+}
+
+.sf-widget input[type="radio"], .sf-widget input[type="checkbox"]{
+	width: 15px;
+}
+
+
+.sf-filter:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.sf-element{
+    border: none;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+	margin: 0;
+    margin-right: 2%;
+    padding: 0;
+    width: 49%;
+}
+
+.sf-element:nth-of-type(2n){
+	margin-right: 0;
+}
+
+.sf-element:nth-of-type(2n+1):before{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.sf-element legend{
+	font-size: 10px;
+}
+
+.sf-element input,
+.sf-element select{
+	width: 100%;
+	height: 25px;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #cacaca;
+}
+
+.sf-element input[type="checkbox"],
+.sf-element input[type="radio"]{
+	width: 10px;
+	height: 10px;
+}
+
+.sf-element.map{
+	width: 100%;
+}
+
+.sf-map{
+	height:250px;
+}
+
+.sf-widget-map-wrapper .sf-map{
+	height: 150px;
+}
+
+.sf-range{
+	width: 100%;
+}
+
+.sf-range-wrapper .sf-range, .sf-widget-range-wrapper .sf-range{
+	background: none repeat scroll 0 0 #FEFEFE;
+    border: 1px solid #CACACA;
+    border-radius: 200px;
+    box-shadow: 1px 1px 1px #CACACA inset;
+    height: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.sf-range-wrapper .sf-range a.ui-slider-handle, .sf-widget-range-wrapper .sf-range a.ui-slider-handle{
+	background: #ffffff;
+    background: linear-gradient(#EAEAEA, #AAAAAA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #CACACA;
+    border-radius: 200px;
+    display: block;
+    height: 12px;
+    position: absolute;
+    top: 1px;
+    width: 12px;
+	margin-left: -14px;
+}
+
+.sf-range-wrapper .sf-range a.ui-state-hover, .sf-widget-range-wrapper .sf-range a.ui-state-hover{
+	background: rgba(0, 0, 0, .3);
+    background: linear-gradient(#FBFBFB, #BBBBBB) repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+.sf-range-wrapper .sf-range a.ui-state-active, .sf-widget-range-wrapper .sf-range a.ui-state-active{
+	background: rgba(0, 0, 0, .7);
+    background: linear-gradient(#AAAAAA, #EAEAEA) repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+.sf-range-wrapper .sf-range a.ui-slider-handle:first-of-type, .sf-widget-range-wrapper .sf-range a.ui-slider-handle:first-of-type{
+	margin-left: 0;
+}
+
+.sf-range-wrapper .sf-range div.ui-slider-range, .sf-widget-range-wrapper .sf-range div.ui-slider-range{
+	background: linear-gradient(#FFFFFF, #E0E0E0) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #CACACA;
+    border-radius: 200px;
+    height: 9px;
+    margin-top: 2px;
+    position: absolute;
+}
+
+	
+
+.sf-range-wrapper, .sf-widget-range-wrapper > p{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 10px;
+	
+}
+
+ul.sf-result, ul.sf-nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.sf-result:after, ul.sf-nav:after{
+	clear: both;
+	display: block;
+	content: '';
+}
+
+ul.sf-result img{
+	max-width: 100%;
+	height: auto;
+}
+
+.sf-result > li{
+	margin: 2% 0;
+	padding: 1%;	
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul.sf-nav > li{
+	float: left;
+	margin: 0;
+	margin-right: 2%;
+}
+
+ul.sf-nav > li > a, ul.sf-nav > li > span{
+	width: 100%;
+	display: block;
+	padding: 5% 25%;
+	border: 1px solid #cacaca;
+}
+
+ul.sf-nav:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.sf-result-head:before{
+	content: '';
+	display: block;
+	clear: both;	
+}
+
+.sf-result-head{	
+	background: none repeat scroll 0 0 #FAFAFA;
+    border: 1px solid #CACACA;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.sf-result-head .sf-foundcount{
+	font-weight: bold;
+}
+
+.sf-result-head .sf-totalcount{
+	font-style: italic;
+}
+
+.sf-filter button{
+	float: right;
+}
+
+.sf-filter button:first-of-type{
+	clear: both;
+}
+
+ul.sf-nav > li > span.sf-nav-click{
+	cursor: pointer;
+}
+
+.sf-filter input.sf-date2{
+	width: 49%;
+}
