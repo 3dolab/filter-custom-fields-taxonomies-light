@@ -2,7 +2,7 @@
 Contributors: websupporter
 Tags: filter,search,taxonomies,postmeta,custom fields,ajax,meta data
 Requires at least: 3.5
-Tested up to: 4.4
+Tested up to: 4.1
 Stable tag: 1.05
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

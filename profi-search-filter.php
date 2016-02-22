@@ -87,11 +87,11 @@
 			group by $wpdb->postmeta.`meta_key`
 		", $post_type );
 		$wpdb->query( $sql );
-		$no_key = array( '_edit_last', '_edit_lock', '_thumbnail_id' );		
+		$no_key = array( '_edit_last', '_edit_lock', '_thumbnail_id' );
 		foreach($wpdb->last_result as $k => $v){
 			if( !in_array( $v->meta_key , $no_key ) ):
 				if( !is_array( maybe_unserialize( $v->meta_value ) ) ):
-					$data[$v->meta_key] =   $v->meta_value;
+					$data[$v->meta_key] = $v->meta_value;
 				else:
 					$add_this = apply_filters( 'sf_postmeta_serialize', array( 'add_this' => false, 'meta_key' => $v->meta_key ) );
 					if( $add_this['add_this'] )

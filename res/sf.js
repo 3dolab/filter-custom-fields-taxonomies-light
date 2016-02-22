@@ -36,7 +36,7 @@ function collect_data( wrapper ){
 
 		var data = {};
 		wrapper.find('select').each( function(){
-			if( ( jQuery( this ).attr( 'name' ) != 'orderby' || jQuery( this ).val() != null ) && jQuery( this ).attr( 'disabled' ) != 'disabled' ){				
+			if( ( jQuery( this ).attr( 'name' ) != 'orderby' || jQuery( this ).val() != null ) && jQuery( this ).attr( 'disabled' ) != 'disabled' ){		
 				if( jQuery( this ).val() != '' ){
 					data[ jQuery( this ).attr( 'name' ) ] = jQuery( this ).val() ;
 				}
@@ -71,7 +71,36 @@ function collect_data( wrapper ){
 		});
 		return data;
 	}
+function preselect_data( data ){
 
+		var wrapper = jQuery( '.sf-wrapper' );
+		
+		wrapper.find('select').each( function(){
+			if( jQuery( this ).attr( 'name' ) != 'orderby' && jQuery( this ).attr( 'disabled' ) != 'disabled' ) {
+				if( typeof data[jQuery( this ).attr( 'name' )] != 'undefined' )
+					for ( $selected in data[jQuery( this ).attr( 'name' )] )
+						jQuery( this ).val($selected).attr('selected','selected');
+			}
+		});
+		
+		wrapper.find('input').each( function(){
+			if( typeof( jQuery( this ).attr( 'name' ) ) != 'undefined' && ( typeof jQuery( this ).attr( 'disabled' ) == 'undefined' || jQuery( this ).attr( 'disabled' ) == false ) ){
+				if( jQuery( this ).attr( 'type' ) == 'checkbox' ){
+					if( typeof data[jQuery( this ).attr( 'name' )] != 'undefined' )
+					for ( $selected in data[jQuery( this ).attr( 'name' )] )
+						if( $selected == jQuery( this ).attr( 'value' ))
+							jQuery( this ).val($selected).prop('checked','checked');
+				} else if ( jQuery( this ).attr( 'type' ) == 'radio' ){
+					if( typeof data[jQuery( this ).attr( 'name' )] != 'undefined' )
+					for ( $selected in data[jQuery( this ).attr( 'name' )] )
+						if( $selected == jQuery( this ).attr( 'value' ))
+							jQuery( this ).val($selected).prop('checked','checked');
+				}
+			}
+		});
+		return data;
+	}
+	
 function get_filter_results( start, $form ){
 
 		var wrapper = jQuery( '.sf-wrapper' );
@@ -79,84 +108,94 @@ function get_filter_results( start, $form ){
 				action	:	'sf-search',
 				data	:	collect_data( wrapper )
 		};
-		
-		
-		if( typeof start == 'undefined' ){
-			location.href = '#sf-' + JSON.stringify( data.data );
-		} else {
-			if( typeof $form != 'undefined' ){
-				var url = $form.attr( 'action' );
-				url += '#sf-' + JSON.stringify( collect_data( $form ) );
-				location.href = url;
-				return;
-			}
-		}
-		wrapper.css({opacity:.1});
-		search_data = data.data;
-		jQuery.post(
-					sf_ajax_root,
-					data,
-					function( response ){
-						response = JSON.parse( response );
-						if( JSON.stringify( search_data ) != JSON.stringify( response.post ) )
-							return;
-						wrapper.css({opacity:1});
-						
-						var txt = '';
-						if( response.result.length > 0 ){
-							for( var i = 0; i < response.result.length; i++ ){
-								txt += response.result[i];
-							}
-						} else {
-							txt = '<li class="no-result">Keine Ergebnisse gefunden</li>';
-						}
-						jQuery( wrapper ).find( '.sf-result' ).html( txt );
-						if( response.result.length > 0 ){
-							sf_adjust_elements_waitimg();
-						}
-						
-						var txt = '';
-						if( response.nav.length > 0 ){
-							for( var i = 0; i < response.nav.length; i++ ){
-								txt += response.nav[i];
-							}
-						}
-						jQuery( wrapper ).find('ul.sf-nav').html( txt );
-						if( typeof( response.head ) != 'undefined' )
-							jQuery( wrapper ).find('.sf-result-head').html( response.head );
-						
-						
-						if (document.createEvent) {
-							sfLoadEvent = document.createEvent( 'HTMLEvents' );
-							sfLoadEvent.initEvent( 'sfLoadEvent', true, true, response );
-						} else {
-							sfLoadEvent = document.createEventObject();
-							sfLoadEvent.eventType = 'sfLoadEvent';
-						}
-						sfLoadEvent.eventName = 'sfLoadEvent';
-						sfLoadEvent.data = { 'response': response, 'fields' : data.data };
-						
-						var eventElement = document.getElementsByClassName( 'sf-wrapper' );
-						eventElement = eventElement[0];
-						if (document.createEvent) {
-							eventElement.dispatchEvent(sfLoadEvent);
-						} else {
-							eventElement.fireEvent("on" + sfLoadEvent.eventType, sfLoadEvent);
-						}
+		if( wrapper.length ){
+			if( typeof start == 'undefined' ){	
+				location.href = '#sf-' + encodeURI(JSON.stringify( data.data ));
+			} else if( start == false ) {
+				if( decodeURI(location.hash.substr(0, 4)) == '#sf-' ){
+					var hash = JSON.parse(decodeURI(location.hash.substr(4)));
+					if ( Object.keys(hash).length > 1 && Object.keys(data.data).length == 1 && data.data['search-id'] ){
+						data.data = hash;
+						preselect_data( hash );
 					}
-					);
+				} 
+				location.href = '#sf-' + encodeURI(JSON.stringify( data.data ));
+			} else {
+				if( typeof $form != 'undefined' ){
+					var url = $form.attr( 'action' );
+					url += '#sf-' + encodeURI(JSON.stringify( collect_data( $form ) ));
+					location.href = url;
+					return;
+				}
+			}
+			wrapper.css({opacity:.1});
+			search_data = data.data;
+			jQuery.post(
+						sf_ajax_root,
+						data,
+						function( response ){
+							response = JSON.parse( response );
+							if( JSON.stringify( search_data ) != JSON.stringify( response.post ) )
+								return;
+							wrapper.css({opacity:1});
+							
+							var txt = '';
+							if( response.result.length > 0 ){
+								for( var i = 0; i < response.result.length; i++ ){
+									txt += response.result[i];
+								}
+							} else {
+								txt = '<li class="no-result">No Results</li>';
+							}
+							jQuery( wrapper ).find( '.sf-result' ).html( txt );
+							if( response.result.length > 0 ){
+								sf_adjust_elements_waitimg();
+							}
+							
+							var txt = '';
+							if( response.nav.length > 0 ){
+								for( var i = 0; i < response.nav.length; i++ ){
+									txt += response.nav[i];
+								}
+							}
+							jQuery( wrapper ).find('ul.sf-nav').html( txt );
+							if( typeof( response.head ) != 'undefined' )
+								jQuery( wrapper ).find('.sf-result-head').html( response.head );
+							
+							
+							if (document.createEvent) {
+								sfLoadEvent = document.createEvent( 'HTMLEvents' );
+								sfLoadEvent.initEvent( 'sfLoadEvent', true, true, response );
+							} else {
+								sfLoadEvent = document.createEventObject();
+								sfLoadEvent.eventType = 'sfLoadEvent';
+							}
+							sfLoadEvent.eventName = 'sfLoadEvent';
+							sfLoadEvent.data = { 'response': response, 'fields' : data.data };
+							
+							var eventElement = document.getElementsByClassName( 'sf-wrapper' );
+							eventElement = eventElement[0];
+							if (document.createEvent) {
+								eventElement.dispatchEvent(sfLoadEvent);
+							} else {
+								eventElement.fireEvent("on" + sfLoadEvent.eventType, sfLoadEvent);
+							}
+						}
+						);
+			}
 	}
 
 
 jQuery( document ).ready( function(){
 
+	get_filter_results(false);
 	
 	jQuery( '.sf-wrapper' ).find( 'input' ).keyup( function( event ){
 		if(event.which == 13)
 			get_filter_results();
 	});
 
-
+	jQuery( '.sf-wrapper' ).find( 'select' ).chosen();
 	
 	jQuery( document ).on( 'change', '.sf-filter input, .sf-filter select', function(){
 		var possible_cond_key = jQuery( this ).closest( '.sf-element' ).attr( 'data-id' );
@@ -190,11 +229,13 @@ jQuery( document ).ready( function(){
 		jQuery('html, body').animate({ scrollTop: ( jQuery('.sf-wrapper').offset().top - 25 )}, 'slow');
 	});
 	
-	if( location.hash.substr( 0, 4 ) == '#sf-' ){
+	if( decodeURI(location.hash.substr(0, 4)) == '#sf-' ){
 		var range_max = '';
 		var range_min = '';
-		var	hash = JSON.parse( location.hash.substr( 4 ) );
+		var	hash = JSON.parse( decodeURI(location.hash.substr(4)) );
 		var do_ajax_request = true;
+		if ( Object.keys(hash).length > 1 )
+			do_ajax_request = false;
 		for ( property in hash ) {
 			jQuery( '.sf-element-hide[data-condkey="'+property+'"]' ).each( function(){
 				if( jQuery( this ).attr( 'data-condval' ) == hash[property] ){

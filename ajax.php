@@ -33,7 +33,7 @@
 			$terms = get_terms( $data_value, $args );
 			if( is_array( $terms ) ):
 			foreach( $terms as $term ){
-				$data[ $i ]['key'] = $term->term_id;
+				$data[ $i ]['key'] = $term->slug;
 				$data[ $i ]['val'] = $term->name;
 				$i++;
 			}
@@ -214,9 +214,9 @@
 			$args['paged'] = (int) $_POST['data']['page']['val'];
 		
 		$data['result'] = array();
-		$args = apply_filters( 'sf-filter-args', $args );
+		$newargs = apply_filters( 'sf-filter-args', $args );
 		$wpdb->query( 'SET OPTION SQL_BIG_SELECTS = 1' );
-		$query = new WP_Query( $args );
+		$query = new WP_Query( $newargs );
 		if( isset( $field['debug'] ) && $field['debug'] == 1 ):
 			$data['args'] = $args;
 			$data['query'] = $query;
@@ -257,13 +257,27 @@
 				endif;
 				
 				if( isset( $field['meta'] ) && is_array( $field['meta'] ) ):
-				foreach( $field['meta'] as $m ):
-					$meta = get_post_meta( get_the_ID(), $m, true );
-					if( is_array( $meta ) )
-						continue;
-
-					$template_single = preg_replace( '^#meta_' . preg_quote( $m ) . '#^', $meta, $template_single );					
-				endforeach;
+					foreach( $field['meta'] as $m ):
+						$meta = get_post_meta( get_the_ID(), $m, true );
+						$return = array( 'add_this' => false, 'meta_key' => $m );
+						$check = sf_types_is_checkbox( $return );
+						if( $check['add_this'] ):
+							$meta = apply_filters( 'sf_post_meta_key_values', $meta, get_the_ID(), $m, true );
+							$meta = maybe_unserialize($meta);
+						endif;
+						if( is_array( $meta ) ) :						
+							$fullvalue = array();
+							// Need a safer check against wpcf groups
+							foreach($meta as $mkey => $mvalue)
+								$fullvalue[$mkey] = $mvalue;
+							sort($fullvalue);
+							$fullvalue = array_unique(array_filter($fullvalue));
+							$meta_string = '<ul><li>'.implode('</li><li>', array_filter($fullvalue)).'</li></ul>';
+							$template_single = preg_replace( '^#meta_' . preg_quote( $m ) . '#^', $meta_string, $template_single );
+						else :
+							$template_single = preg_replace( '^#meta_' . preg_quote( $m ) . '#^', $meta, $template_single );					
+						endif;
+					endforeach;
 				endif;
 				
 				$image = "";
@@ -283,8 +297,6 @@
 			ob_end_clean();
 			$data['result'][] = '<li class="sf-noresult">' . apply_filters( 'sf-results-noresult', $template_noresult ) . '</li>';
 		endif;
-		
-		
 		
 		if( defined( 'ICL_LANGUAGE_CODE' )  ):
 			global $sitepress;
@@ -327,6 +339,12 @@
 				$data['nav'][]='<li><span class="sf-nav-click sf-nav-right-arrow" data-href="' . ( $paged + 1 ) . '">&raquo;</span></li>';		
 			
 		endif;
+		
+		//wp_reset_query();
+		wp_reset_postdata();
+		
+		$data = apply_filters('sf-get-search-data',$data,$args);
+		
 		return $data;
 	}
 ?>

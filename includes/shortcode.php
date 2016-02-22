@@ -3,7 +3,6 @@
 	foreach( $fields as $field )
 		if( $field['name'] == $attr['id'] )
 			break;
-			
 ?>
 <!-- Search Filter: <?php echo $attr['id']; ?>-->
 <div class="sf-wrapper">
@@ -113,6 +112,11 @@
 				$data_value = '';
 			endif;
 		
+		if($data_value)
+			$key = $data_value;
+		if($data_type=='meta' && preg_match( '^wpcf^', $data_value ))
+			$key = str_replace('wpcf-','',$data_value);		
+		
 		$class_hide = "";
 		$style_hide = "";
 		$cond_key = "";
@@ -146,13 +150,13 @@
 					
 					
 					foreach( $terms as $term ):
-					?><option value="<?php echo $term->term_id; ?>"><?php echo $term->name; ?></option><?php
+					?><option value="<?php echo $term->slug; ?>"><?php echo $term->name; ?></option><?php
 					endforeach;
 				elseif( $data_type == 'meta' && $element['options'] == 'auto' ):
 					$values = get_postmeta_values( $data_value );
 					foreach( $values as $val ):
 					?>
-					<option value="<?php echo $val->meta_value; ?>"><?php echo $val->meta_value; ?></option>					
+					<option value="<?php echo $val->meta_key; ?>"><?php echo $val->meta_value; ?></option>					
 					<?php
 					endforeach;
 				elseif( $element['options'] == 'individual' ):
@@ -196,7 +200,7 @@
 						$terms = get_terms( $data_value, $args );
 						foreach( $terms as $term ): 
 							?>
-							<label><input type="checkbox" value="<?php echo $term->term_id; ?>" name="<?php echo $key; ?>[]" /> <?php echo $term->name; ?></label>
+							<label><input type="checkbox" value="<?php echo $term->slug; ?>" name="<?php echo $key; ?>[]" /> <?php echo $term->name; ?></label>
 							<?php 
 						endforeach;
 					elseif( $data_type == 'meta' && $element['options'] == 'auto' ):
@@ -241,7 +245,7 @@
 						$terms = get_terms( $data_value, $args );
 						foreach( $terms as $term ): 
 							?>
-							<label><input type="radio" value="<?php echo $term->term_id; ?>" name="<?php echo $key; ?>" /> <?php echo $term->name; ?></label>
+							<label><input type="radio" value="<?php echo $term->slug; ?>" name="<?php echo $key; ?>" /> <?php echo $term->name; ?></label>
 							<?php 
 						endforeach;
 					elseif( $data_type == 'meta' && $element['options'] == 'auto' ):
@@ -285,6 +289,7 @@
 				unset( $_POST['data'] );
 				$_POST['data']['search-id'] = $attr['id'];
 				$results = sf_do_search();
+				$results = apply_filters( 'sf-search-results', $results, $args );
 			endif;
 		?>
 		
